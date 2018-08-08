@@ -1,0 +1,28 @@
+{
+    "name": "zeevin/libjdvop",
+    "description": "京东大客户开放平台VOP(实物部分)API对接库",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ConnorCho",
+            "email": "irestful@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "dusank/knapsack": "^10.0",
+        "jms/serializer": "^1.11",
+        "doctrine/cache": "^1.7",
+        "pimple/pimple": "^3.2",
+        "predis/predis": "^1.1",
+        "openlss/lib-array2xml": "^0.5.1",
+        "symfony/http-foundation": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zeevin\\Libjdvop\\": "src/"
+        }
+    }
+}
