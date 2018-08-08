@@ -26,6 +26,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new GetSkuByPageClient($app);
         };
-
+        $app['Product.GetDetail'] = function ($app)
+        {
+            return new GetDetailClient($app);
+        };
     }
 }

@@ -12,8 +12,6 @@ require  '../vendor/autoload.php';
 $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
-$jdvopConfig = $application['config']->get('jd-vop');
-$cacheConfig = $application['config']->get('cache');
 
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetPageNum\Request();
 $reqData = $request->serialize();
