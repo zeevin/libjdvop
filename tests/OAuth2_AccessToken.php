@@ -23,11 +23,12 @@ $request->setClientId($jdvopConfig['clientId'])->setClientSecret($jdvopConfig['c
     ->setSign();
 
 $reqData = $request->serialize();
-//print_r($reqData);
+//print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\OAuth2\AccessTokenClient $app */
 $app = $application['OAuth2.AccessToken'];
 /** @var \Zeevin\Libjdvop\OAuth2\ResponseAttribute\AccessToken\Response $ret */
 $ret = $app->request($reqData)->getResponse();
+//print_r($ret);
 $expirtime = $ret->getResult()->getExpiresIn()-600-(time()-$ret->getResult()->getTime()/1000);
 $application['cache']->save($cacheConfig['oauth_key'],$ret->getResult()->getAccessToken(),$expirtime);
 $application['cache']->save($cacheConfig['oauth_refresh_key'],$ret->getResult()->getRefreshToken(),$ret->getResult()->getRefreshTokenExpires()/100-time());

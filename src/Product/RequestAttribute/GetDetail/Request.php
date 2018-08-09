@@ -30,7 +30,7 @@ class Request extends BaseRequestAttribute
      * isEnergySaving 是否政府节能 contractSkuExt 定制商品池开关 ChinaCatalog 中图法分类号
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("grant_type")
-     * @JMS\Type("array<string>")
+     * @JMS\Type("string")
      */
     protected $queryExts;
 
@@ -43,11 +43,14 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param mixed $sku
+     * @param $sku
+     *
+     * @return $this
      */
     public function setSku($sku)
     {
         $this->sku = $sku;
+        return $this;
     }
 
     /**
@@ -60,12 +63,16 @@ class Request extends BaseRequestAttribute
 
     /**
      * @param array $queryExts
+     *
+     * @return $this
      */
     public function setQueryExts($queryExts = [])
     {
         $lists = ['appintroduce','shouhou','isFactoryShip','isEnergySaving','contractSkuExt','ChinaCatalog'];
-        $ext = array_intersect_assoc($queryExts.$lists);
-        $this->queryExts = $ext;
+        $ext = array_intersect_assoc($queryExts,$lists);
+        if (!empty($ext))
+            $this->queryExts = implode(',',$ext);
+        return $this;
     }
 
 
