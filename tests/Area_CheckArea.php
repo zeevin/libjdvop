@@ -12,11 +12,11 @@ $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
 
-$request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request();
-$request->setSku(208684);
+$request = new \Zeevin\Libjdvop\Area\RequestAttribute\CheckArea\Request();
+$request->setId(13)->setCityId(2900)->setCountyId(2915)->setTownId(25785);
 $reqData = $request->serialize();
-/** @var \Zeevin\Libjdvop\Product\GetDetailClient $app */
-$app = $application['Product.GetDetail'];
-/** @var \Zeevin\Libjdvop\Product\ResponseAttribute\GetDetail\Response $ret */
+/** @var \Zeevin\Libjdvop\Area\CheckAreaClient $app */
+$app = $application['Area.CheckArea'];
+/** @var \Zeevin\Libjdvop\Area\ResponseAttribute\CheckArea\Response $ret */
 $ret = $app->request($reqData)->getResponse();
-var_dump($ret->getResult());
+var_dump($ret);
