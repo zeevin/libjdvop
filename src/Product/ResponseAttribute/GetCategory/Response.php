@@ -3,29 +3,30 @@
  * @link   https://www.init.lu
  * @author Cao Kang(caokang@outlook.com)
  * Date: 2018/8/9
- * Time: 上午11:36
+ * Time: 下午9:34
  * Source: Response.php
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\Price\ResponseAttribute\GetSellPrice;
+namespace Zeevin\Libjdvop\Product\ResponseAttribute\GetCategory;
+
 
 use JMS\Serializer\Annotation as JMS;
 use JMS\Serializer\Annotation\SerializedName;
 use Zeevin\Libjdvop\Core\BaseResponseAttribute;
-use Zeevin\Libjdvop\Price\ResponseAttribute\GetSellPrice\Struct\Result;
+use Zeevin\Libjdvop\Product\ResponseAttribute\GetCategory\Struct\CategoryNo;
 
 class Response extends BaseResponseAttribute
 {
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("result")
-     * @JMS\Type("array<Zeevin\Libjdvop\Price\ResponseAttribute\GetSellPrice\Struct\Result>")
+     * @JMS\Type("Zeevin\Libjdvop\Product\ResponseAttribute\GetCategory\Struct\CategoryNo")
      */
     protected $result;
 
     /**
-     * @return Result
+     * @return CategoryNo
      */
     public function getResult()
     {
