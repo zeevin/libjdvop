@@ -47,6 +47,15 @@ abstract class BaseResponseAttribute
      */
     protected $resultMessage;
 
+    /**
+     * 执行结果成功，还是失败
+     * 可选
+     * @JMS\XmlElement(cdata=false)
+     * @SerializedName("success")
+     * @JMS\Type("bool")
+     */
+    protected $success;
+
 
     /**
      * @return int
@@ -79,6 +88,16 @@ abstract class BaseResponseAttribute
     {
         return $this->resultMessage;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getSuccess()
+    {
+        return $this->success;
+    }
+
+
 
 
 }

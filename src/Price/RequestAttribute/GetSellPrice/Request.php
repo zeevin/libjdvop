@@ -2,13 +2,13 @@
 /**
  * @link   https://www.init.lu
  * @author Cao Kang(caokang@outlook.com)
- * Date: 2018/8/8
- * Time: 下午11:16
+ * Date: 2018/8/9
+ * Time: 上午10:56
  * Source: Request.php
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\Product\RequestAttribute\GetDetail;
+namespace Zeevin\Libjdvop\Price\RequestAttribute\GetSellPrice;
 
 
 use JMS\Serializer\Annotation as JMS;
@@ -18,18 +18,18 @@ use Zeevin\Libjdvop\Core\BaseRequestAttribute;
 class Request extends BaseRequestAttribute
 {
     /**
-     * 商品编号，只支持单个查询
+     * 商品编号，最多100个商品，英文逗号分隔
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("sku")
      * @JMS\Type("string")
      */
     protected $sku;
     /**
-     * 可选扩展参数，支持单个/多个查询[逗号间隔]: appintroduce:移动商品详情介绍信息 shouhou:商品售后信息
-     * isFactoryShip 是否厂商直送
-     * isEnergySaving 是否政府节能 contractSkuExt 定制商品池开关 ChinaCatalog 中图法分类号
+     * 可选扩展参数，支持单个/多个查询[逗号间隔]
+     * containsTax: 税率、税额、裸价
+     * marketPrice: 市场价(对于图书商品来说，即为定价)
      * @JMS\XmlElement(cdata=false)
-     * @SerializedName("grant_type")
+     * @SerializedName("queryExts")
      * @JMS\Type("string")
      */
     protected $queryExts;
@@ -43,13 +43,14 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param $sku
+     * @param array $sku
      *
      * @return $this
      */
-    public function setSku($sku)
+    public function setSku(array $sku)
     {
-        $this->sku = $sku;
+        $skus = implode(',', $sku);
+        $this->sku = $skus;
         return $this;
     }
 
@@ -66,14 +67,12 @@ class Request extends BaseRequestAttribute
      *
      * @return $this
      */
-    public function setQueryExts($queryExts = [])
+    public function setQueryExts(array $queryExts = [])
     {
-        $lists = ['appintroduce','shouhou','isFactoryShip','isEnergySaving','contractSkuExt','ChinaCatalog'];
+        $lists = ['containsTax','marketPrice'];
         $ext = array_intersect_assoc($queryExts,$lists);
         if (!empty($ext))
             $this->queryExts = implode(',',$ext);
         return $this;
     }
-
-
 }

@@ -12,11 +12,16 @@ $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
 
+/** @var \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request $request */
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request();
-$request->setSku(208684);
+
+
+$request->setSku(165145)->setQueryExts(['appintroduce','shouhou']);
 $reqData = $request->serialize();
+//print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\GetDetailClient $app */
 $app = $application['Product.GetDetail'];
 /** @var \Zeevin\Libjdvop\Product\ResponseAttribute\GetDetail\Response $ret */
 $ret = $app->request($reqData)->getResponse();
+//var_dump($ret);exit;
 var_dump($ret->getResult());
