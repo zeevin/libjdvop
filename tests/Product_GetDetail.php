@@ -7,14 +7,15 @@
  * Source: Product_GetDetail.php
  * Project: libjdvop
  */
-
-require  '../vendor/autoload.php';
+require  './autoloader.php';
 $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
 
 /** @var \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request $request */
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request();
+
+
 $request->setSku(165145)->setQueryExts(['appintroduce','shouhou']);
 $reqData = $request->serialize();
 //print_r($reqData);exit;

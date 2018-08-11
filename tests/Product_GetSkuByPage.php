@@ -8,7 +8,7 @@
  * Project: libjdvop
  */
 
-require  '../vendor/autoload.php';
+require  './autoloader.php';
 $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
@@ -16,6 +16,6 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetSkuByPage\Request();
 $request->setPageNo(1)->setPageNum(16);
 $reqData = $request->serialize();
-//print_r($reqData);exit;
+//var_dump($reqData);exit;
 $app = $application['Product.GetSkuByPage'];
-print_r($app->request($reqData)->getResponse());
+var_dump($app->request($reqData)->getResponse());

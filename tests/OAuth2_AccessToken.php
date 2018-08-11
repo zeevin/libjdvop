@@ -8,7 +8,7 @@
  * Project: libjdvop
  */
 
-require  '../vendor/autoload.php';
+require  './autoloader.php';
 $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
@@ -23,6 +23,7 @@ $request->setClientId($jdvopConfig['clientId'])->setClientSecret($jdvopConfig['c
     ->setSign();
 
 $reqData = $request->serialize();
+
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\OAuth2\AccessTokenClient $app */
 $app = $application['OAuth2.AccessToken'];

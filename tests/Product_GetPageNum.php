@@ -8,7 +8,7 @@
  * Project: libjdvop
  */
 
-require  '../vendor/autoload.php';
+require  './autoloader.php';
 $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
@@ -17,4 +17,4 @@ $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetPageNum\Request();
 $reqData = $request->serialize();
 
 $app = $application['Product.GetPageNum'];
-print_r($app->request($reqData)->getResponse());
+var_dump($app->request($reqData)->getResponse());
