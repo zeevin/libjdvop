@@ -34,5 +34,15 @@ class ServiceProvider implements ServiceProviderInterface
 		{
 			return new CheckAreaClient($app);
 		};
+
+		$app['Area.GetJDAddressFromAddress'] = function ($app)
+		{
+			return new GetJDAddressFromAddressClient($app);
+		};
+
+		$app['Area.GetJDAddressFromLatLng'] = function ($app)
+		{
+			return new GetJDAddressFromLatLngClient($app);
+		};
 	}
 }
