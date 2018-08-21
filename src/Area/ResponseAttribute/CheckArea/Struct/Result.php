@@ -40,10 +40,6 @@ class Result
 	 */
 	protected $message;
 
-	public function getSuccess(){
-		return $this->success;
-	}
-
 	public function getResultCode(){
 		return $this->resultCode;
 	}
