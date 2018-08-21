@@ -34,5 +34,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new GetCategoryClient($app);
         };
+        $app['Product.SkuState'] = function ($app)
+        {
+            return new SkuStateClient($app);
+        };
     }
 }
