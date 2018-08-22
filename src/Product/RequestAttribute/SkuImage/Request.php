@@ -2,13 +2,13 @@
 /**
  * @link   https://www.init.lu
  * @author Cao Kang(caokang@outlook.com)
- * Date: 2018/8/21
- * Time: 下午5:08
+ * Date: 2018/8/22
+ * Time: 上午10:17
  * Source: Request.php
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\Product\RequestAttribute\SkuState;
+namespace Zeevin\Libjdvop\Product\RequestAttribute\SkuImage;
 
 
 use JMS\Serializer\Annotation as JMS;
@@ -43,5 +43,4 @@ class Request extends BaseRequestAttribute
         $this->sku = implode(',',$sku);
         return $this;
     }
-
 }

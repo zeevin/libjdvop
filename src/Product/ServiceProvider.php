@@ -38,5 +38,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new SkuStateClient($app);
         };
+        $app['Product.SkuImage'] = function ($app)
+        {
+            return new SkuImageClient($app);
+        };
     }
 }
