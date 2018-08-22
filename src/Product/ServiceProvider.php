@@ -42,5 +42,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new SkuImageClient($app);
         };
+        $app['Product.GetCommentSummarys'] = function ($app)
+        {
+            return new GetCommentSummarysClient($app);
+        };
     }
 }
