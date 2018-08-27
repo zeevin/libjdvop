@@ -12,7 +12,7 @@ $config = require './config.php';
 $application = new \Zeevin\Libjdvop\Application($config);
 
 $request = new \Zeevin\Libjdvop\Area\RequestAttribute\GetTown\Request();
-$request->setId(2915);
+$request->setId(3535);
 $reqData = $request->serialize();
 //var_dump($reqData);die;
 /** @var \Zeevin\Libjdvop\Area\GetTownClient $app */

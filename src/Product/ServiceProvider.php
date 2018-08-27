@@ -46,5 +46,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new GetCommentSummarysClient($app);
         };
+        $app['Product.CheckAreaLimit'] = function ($app)
+        {
+            return new CheckAreaLimitClient($app);
+        };
     }
 }
