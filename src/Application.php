@@ -19,6 +19,7 @@ class Application extends ServiceContainer
         \Zeevin\Libjdvop\OAuth2\ServiceProvider::class,
         \Zeevin\Libjdvop\Product\ServiceProvider::class,
 	    \Zeevin\Libjdvop\Area\ServiceProvider::class,
-        \Zeevin\Libjdvop\Price\ServiceProvider::class
+        \Zeevin\Libjdvop\Price\ServiceProvider::class,
+        \Zeevin\Libjdvop\Order\ServiceProvider::class
     ];
 }
