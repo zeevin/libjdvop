@@ -20,6 +20,7 @@ class Application extends ServiceContainer
         \Zeevin\Libjdvop\Product\ServiceProvider::class,
 	    \Zeevin\Libjdvop\Area\ServiceProvider::class,
         \Zeevin\Libjdvop\Price\ServiceProvider::class,
-        \Zeevin\Libjdvop\Order\ServiceProvider::class
+        \Zeevin\Libjdvop\Order\ServiceProvider::class,
+        \Zeevin\Libjdvop\Search\ServiceProvider::class
     ];
 }
