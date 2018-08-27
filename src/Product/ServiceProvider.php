@@ -50,5 +50,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new CheckAreaLimitClient($app);
         };
+        $app['Product.Check'] = function ($app)
+        {
+            return new CheckClient($app);
+        };
     }
 }
