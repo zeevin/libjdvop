@@ -4,3 +4,4 @@ vendor/
 tests/config.php
 tests/cache
 tests/Lemans_Export.php
+composer.lock
