@@ -8,7 +8,7 @@
  * Project: libjdvop
  */
 
-require  '../vendor/autoload.php';
+require  'autoloader.php';
 $config = require './config.php';
 
 $application = new \Zeevin\Libjdvop\Application($config);
