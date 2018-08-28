@@ -3,12 +3,12 @@
  * @link   https://www.init.lu
  * @author Cao Kang(caokang@outlook.com)
  * Date: 2018/8/28
- * Time: 下午3:57
+ * Time: 下午5:40
  * Source: Response.php
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\Stock\ResponseAttribute\GetNewStockById;
+namespace Zeevin\Libjdvop\Stock\ResponseAttribute\GetStockById;
 
 
 use JMS\Serializer\Annotation as JMS;

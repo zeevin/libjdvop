@@ -2,13 +2,13 @@
 /**
  * @link   https://www.init.lu
  * @author Cao Kang(caokang@outlook.com)
- * Date: 2018/8/27
- * Time: 下午10:24
+ * Date: 2018/8/28
+ * Time: 下午5:09
  * Source: Request.php
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\Stock\RequestAttribute\GetNewStockById;
+namespace Zeevin\Libjdvop\Stock\RequestAttribute\GetStockById;
 
 
 use JMS\Serializer\Annotation as JMS;
@@ -18,14 +18,14 @@ use Zeevin\Libjdvop\Core\BaseRequestAttribute;
 class Request extends BaseRequestAttribute
 {
     /**
-     * 商品和数量
+     * 商品编号 批量以逗号分隔 (最高支持 100 个商品)
      * @JMS\XmlElement(cdata=false)
-     * @SerializedName("skuNums")
+     * @SerializedName("sku")
      * @JMS\Type("string")
      */
-    protected $skuNums;
+    protected $sku;
     /**
-     *
+     * 格式:1_0_0 (分别代表 1、2、3 级地址)
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("area")
      * @JMS\Type("string")
@@ -35,19 +35,19 @@ class Request extends BaseRequestAttribute
     /**
      * @return mixed
      */
-    public function getSkuNums()
+    public function getSku()
     {
-        return $this->skuNums;
+        return $this->sku;
     }
 
     /**
-     * @param array ...$skuId_num_pair_array
+     * @param int ...$sku
      *
      * @return $this
      */
-    public function setSkuNums(array ... $skuId_num_pair_array)
+    public function setSku(int ... $sku)
     {
-        $this->skuNums = json_encode($skuId_num_pair_array);
+        $this->sku = implode(',',$sku);
         return $this;
     }
 
@@ -69,5 +69,6 @@ class Request extends BaseRequestAttribute
         $this->area = implode('_',$area);
         return $this;
     }
+
 
 }

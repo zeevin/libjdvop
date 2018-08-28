@@ -21,5 +21,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new GetNewStockByIdClient($app);
         };
+        $app['Stock.GetStockByIdClient'] = function ($app)
+        {
+            return new GetStockByIdClient($app);
+        };
     }
 }
