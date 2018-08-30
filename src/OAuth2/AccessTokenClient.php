@@ -4,7 +4,7 @@
  * @author Cao Kang(caokang@outlook.com)
  * Date: 2018/8/8
  * Time: 下午5:02
- * Source: AccessTokenClient.php
+ * Source: CheckNewOrderClient.phphp
  * Project: libjdvop
  */
 
