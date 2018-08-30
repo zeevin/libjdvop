@@ -11,7 +11,9 @@
 namespace Zeevin\Libjdvop\Order\ResponseAttribute\DoPay;
 
 
-class Response
+use Zeevin\Libjdvop\Core\BaseResponseAttribute;
+
+class Response extends BaseResponseAttribute
 {
 
 }
