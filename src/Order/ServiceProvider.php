@@ -25,5 +25,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new SubmitOrderClient($app);
         };
+        $app['Order.SelectJdOrder'] = function ($app)
+        {
+            return new SelectJdOrderClient($app);
+        };
     }
 }
