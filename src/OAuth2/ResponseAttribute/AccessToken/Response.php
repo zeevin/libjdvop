@@ -21,7 +21,7 @@ class Response extends BaseResponseAttribute
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("result")
-     * @JMS\Type("Zeevin\Libjdvop\OAuth2\ResponseAttribute\CheckNewOrder\Struct\Result")
+     * @JMS\Type("Zeevin\Libjdvop\OAuth2\ResponseAttribute\AccessToken\Struct\Result")
      */
     protected $result;
 
