@@ -18,7 +18,7 @@ class ServiceProvider implements ServiceProviderInterface
     {
         $app['OAuth2.CheckNewOrder'] = function ($app)
         {
-            return new CheckNewOrderClient($app);
+            return new AccessTokenClient($app);
         };
 
     }

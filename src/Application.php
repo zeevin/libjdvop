@@ -24,5 +24,6 @@ class Application extends ServiceContainer
         \Zeevin\Libjdvop\Search\ServiceProvider::class,
         \Zeevin\Libjdvop\Stock\ServiceProvider::class,
 	    \Zeevin\Libjdvop\CheckOrder\ServiceProvider::class,
+	    \Zeevin\Libjdvop\Message\ServiceProvider::class,
     ];
 }
