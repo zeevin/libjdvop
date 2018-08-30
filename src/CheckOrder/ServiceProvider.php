@@ -8,18 +8,29 @@
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\OAuth2;
+namespace Zeevin\Libjdvop\CheckOrder;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
+
 class ServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $app)
     {
-        $app['OAuth2.CheckNewOrder'] = function ($app)
+        $app['CheckOrder.CheckNewOrder'] = function ($app)
         {
             return new CheckNewOrderClient($app);
         };
+
+        $app['CheckOrder.CheckDlokOrder'] = function ($app)
+        {
+	        return new CheckDlokOrderClient($app);
+        };
+
+	    $app['CheckOrder.CheckRefuseOrder'] = function ($app)
+	    {
+		    return new CheckRefuseOrderClient($app);
+	    };
 
     }
 }
