@@ -25,8 +25,8 @@ $request->setClientId($jdvopConfig['clientId'])->setClientSecret($jdvopConfig['c
 $reqData = $request->serialize();
 
 //print_r($reqData);exit;
-/** @var \Zeevin\Libjdvop\OAuth2\CheckNewOrderClient $app */
-$app = $application['OAuth2.CheckNewOrder'];
+/** @var \Zeevin\Libjdvop\OAuth2\AccessTokenClient $app */
+$app = $application['OAuth2.AccessTokenClient'];
 /** @var \Zeevin\Libjdvop\OAuth2\ResponseAttribute\AccessToken\Response $ret */
 $ret = $app->request($reqData)->getResponse();
 //print_r($ret);
