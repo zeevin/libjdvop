@@ -16,7 +16,7 @@ class ServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $app)
     {
-        $app['OAuth2.CheckNewOrder'] = function ($app)
+        $app['OAuth2.AccessToken'] = function ($app)
         {
             return new AccessTokenClient($app);
         };
