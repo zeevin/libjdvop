@@ -3,12 +3,12 @@
  * @link   https://www.init.lu
  * @author Cao Kang(caokang@outlook.com)
  * Date: 2018/8/30
- * Time: 下午2:15
+ * Time: 下午2:40
  * Source: Request.php
  * Project: libjdvop
  */
 
-namespace Zeevin\Libjdvop\Order\RequestAttribute\Cancel;
+namespace Zeevin\Libjdvop\Order\RequestAttribute\DoPay;
 
 
 use JMS\Serializer\Annotation as JMS;
@@ -45,5 +45,4 @@ class Request extends BaseRequestAttribute
         $this->jdOrderId = $jdOrderId;
         return $this;
     }
-
 }
