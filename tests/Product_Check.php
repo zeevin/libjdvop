@@ -17,7 +17,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\Check\Request();
 
 
-$request->setSkuIds(165145);
+$request->setSkuIds(774304);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\CheckClient $app */

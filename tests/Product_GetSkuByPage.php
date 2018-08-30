@@ -14,7 +14,7 @@ $config = require './config.php';
 $application = new \Zeevin\Libjdvop\Application($config);
 
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetSkuByPage\Request();
-$request->setPageNo(1)->setPageNum(16);
+$request->setPageNo(1)->setPageNum(18);
 $reqData = $request->serialize();
 //var_dump($reqData);exit;
 $app = $application['Product.GetSkuByPage'];

@@ -16,7 +16,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request();
 
 
-$request->setSku(3800825)->setQueryExts(['appintroduce','shouhou']);
+$request->setSku(774304)->setQueryExts(['appintroduce','shouhou']);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\GetDetailClient $app */

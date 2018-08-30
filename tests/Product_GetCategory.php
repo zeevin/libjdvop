@@ -15,7 +15,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 
 /** @var \Zeevin\Libjdvop\Product\RequestAttribute\GetCategory\Request $request */
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetCategory\Request();
-$request->setCid(15847);
+$request->setCid(3986);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\GetCategoryClient $app */
