@@ -14,7 +14,7 @@ $config = require './config.php';
 $application = new \Zeevin\Libjdvop\Application($config);
 
 $request = new \Zeevin\Libjdvop\Price\RequestAttribute\GetSellPrice\Request();
-$request->setSku([165145,174550])->setQueryExts(['containsTax','marketPrice']);
+$request->setSku([774304])->setQueryExts(['containsTax','marketPrice']);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Price\GetSellPriceClient $app */

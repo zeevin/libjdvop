@@ -21,5 +21,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new GetFreightClient($app);
         };
+        $app['Order.SubmitOrder'] = function ($app)
+        {
+            return new SubmitOrderClient($app);
+        };
     }
 }

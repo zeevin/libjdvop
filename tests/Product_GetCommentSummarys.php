@@ -17,7 +17,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetCommentSummarys\Request();
 
 
-$request->setSku(165145,196567);
+$request->setSku(165145,7735915);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\GetCommentSummarysClient $app */
