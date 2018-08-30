@@ -4,4 +4,5 @@ vendor/
 tests/config.php
 tests/cache
 tests/Lemans_Export.php
+tests/Order_SubmitOrder.php
 composer.lock
