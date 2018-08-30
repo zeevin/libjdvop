@@ -18,10 +18,10 @@ class ServiceProvider implements ServiceProviderInterface
 		{
 			return new GetClient($app);
 		};
-//		$app['Message.GetCity'] = function ($app)
-//		{
-//			return new GetCityClient($app);
-//		};
+		$app['Message.Del'] = function ($app)
+		{
+			return new DelClient($app);
+		};
 
 	}
 }
