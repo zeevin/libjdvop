@@ -23,6 +23,6 @@ $reqData = $request->serialize();
 /** @var \Zeevin\Libjdvop\Order\SelectJdOrderClient $app */
 $app = $application['Order.SelectJdOrder'];
 /** @var \Zeevin\Libjdvop\Order\ResponseAttribute\SelectJdOrder\Response $ret */
-$ret = $app->request($reqData)->getResponse('json');
+$ret = $app->request($reqData)->getResponse();
 //var_dump($ret);exit;
-print_r($ret->getResult());
+print_r($ret);
