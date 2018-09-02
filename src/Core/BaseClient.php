@@ -199,7 +199,7 @@ Abstract class BaseClient
                 ->setSign();
 
             $reqData = $request->serialize();
-            $app = $application['OAuth2.CheckNewOrder'];
+            $app = $application['OAuth2.AccessToken'];
             /** @var \Zeevin\Libjdvop\OAuth2\ResponseAttribute\AccessToken\Response $ret */
             $ret = $app->request($reqData)->getResponse();
             $expirtime = $ret->getResult()->getExpiresIn()-600-(time()-$ret->getResult()->getTime()/1000);
