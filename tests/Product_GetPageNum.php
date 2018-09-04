@@ -17,4 +17,4 @@ $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetPageNum\Request();
 $reqData = $request->serialize();
 
 $app = $application['Product.GetPageNum'];
-var_dump($app->request($reqData)->getResponse());
+print_r($app->request($reqData)->getResponse());

@@ -54,5 +54,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new CheckClient($app);
         };
+        $app['Product.GetCategorys'] = function ($app)
+        {
+            return new GetCategorysClient($app);
+        };
     }
 }
