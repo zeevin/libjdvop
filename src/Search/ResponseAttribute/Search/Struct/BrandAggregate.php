@@ -29,4 +29,22 @@ class BrandAggregate
      * @JMS\Type("array<string>")
      */
     protected $pinyinAggr;
+
+    /**
+     * @return mixed
+     */
+    public function getBrandList()
+    {
+        return $this->brandList;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPinyinAggr()
+    {
+        return $this->pinyinAggr;
+    }
+
+
 }

@@ -76,4 +76,77 @@ class Result
      * @JMS\Type("array<Zeevin\Libjdvop\Search\ResponseAttribute\Search\Struct\HitResult>")
      */
     protected $hitResult;
+
+    /**
+     * @return mixed
+     */
+    public function getResultCount()
+    {
+        return $this->resultCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPageIndex()
+    {
+        return $this->pageIndex;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPageSize()
+    {
+        return $this->pageSize;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPageCount()
+    {
+        return $this->pageCount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getBrandAggregate()
+    {
+        return $this->brandAggregate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCategoryAggregate()
+    {
+        return $this->categoryAggregate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPriceIntervalAggregate()
+    {
+        return $this->priceIntervalAggregate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getExpandAttrAggregate()
+    {
+        return $this->expandAttrAggregate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHitResult()
+    {
+        return $this->hitResult;
+    }
+
 }
