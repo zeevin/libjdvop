@@ -196,6 +196,7 @@ class Request extends BaseRequestAttribute
     {
 
         $this->brands = implode(',',$brands);
+        return $this;
     }
 
 

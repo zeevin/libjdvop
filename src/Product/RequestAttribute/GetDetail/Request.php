@@ -29,7 +29,7 @@ class Request extends BaseRequestAttribute
      * isFactoryShip 是否厂商直送
      * isEnergySaving 是否政府节能 contractSkuExt 定制商品池开关 ChinaCatalog 中图法分类号
      * @JMS\XmlElement(cdata=false)
-     * @SerializedName("grant_type")
+     * @SerializedName("queryExts")
      * @JMS\Type("string")
      */
     protected $queryExts;

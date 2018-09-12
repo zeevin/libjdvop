@@ -17,7 +17,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Search\RequestAttribute\Search\Request();
 
 
-$request->setKeyword('小爱音箱')->setBrands('小米');
+$request->setKeyword('小爱音箱')->setBrands('小米')->setPageIndex(1);
 $reqData = $request->serialize();
 //print_r(http_build_query($reqData));exit;
 /** @var \Zeevin\Libjdvop\Search\SearchClient $app */

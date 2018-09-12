@@ -31,10 +31,10 @@ class Result
     protected $jdPrice;
     /**
      * @JMS\XmlElement(cdata=false)
-     * @SerializedName("Price")
+     * @SerializedName("price")
      * @JMS\Type("float")
      */
-    protected $Price;
+    protected $price;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("tax")
@@ -81,7 +81,7 @@ class Result
      */
     public function getPrice()
     {
-        return $this->Price;
+        return $this->price;
     }
 
     /**
