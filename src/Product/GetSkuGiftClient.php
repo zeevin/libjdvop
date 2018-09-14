@@ -11,7 +11,9 @@
 namespace Zeevin\Libjdvop\Product;
 
 
-class GetSkuGiftClient
+use Zeevin\Libjdvop\Core\BaseClient;
+
+class GetSkuGiftClient extends BaseClient
 {
     protected $domain = 'product';
     protected $prefix = 'getSkuGift';
