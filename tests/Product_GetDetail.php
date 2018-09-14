@@ -16,12 +16,12 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\GetDetail\Request();
 
 
-$request->setSku(3008171)->setQueryExts(['appintroduce','shouhou']);
+$request->setSku(6280060)->setQueryExts(['appintroduce','shouhou']);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\GetDetailClient $app */
 $app = $application['Product.GetDetail'];
 /** @var \Zeevin\Libjdvop\Product\ResponseAttribute\GetDetail\Response $ret */
 $ret = $app->request($reqData)->getResponse();
-//var_dump($ret);exit;
+var_dump($ret);exit;
 echo($ret->getResult()->getIntroduction());

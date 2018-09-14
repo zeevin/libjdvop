@@ -58,5 +58,9 @@ class ServiceProvider implements ServiceProviderInterface
         {
             return new GetCategorysClient($app);
         };
+        $app['Product.GetSkuGift'] = function ($app)
+        {
+            return new GetSkuGiftClient($app);
+        };
     }
 }

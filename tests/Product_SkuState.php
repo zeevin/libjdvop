@@ -17,7 +17,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Product\RequestAttribute\SkuState\Request();
 
 
-$request->setSku(165145);
+$request->setSku([165145]);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Product\SkuStateClient $app */
@@ -25,4 +25,4 @@ $app = $application['Product.SkuState'];
 /** @var \Zeevin\Libjdvop\Product\ResponseAttribute\SkuState\Response $ret */
 $ret = $app->request($reqData)->getResponse();
 //var_dump($ret);exit;
-print_r($ret);
+print_r($ret->getResult());
