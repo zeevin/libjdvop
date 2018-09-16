@@ -65,11 +65,11 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param mixed ...$skuId_num_paris_array
+     * @param array $skuId_num_paris_array
      *
      * @return $this
      */
-    public function setSku(... $skuId_num_paris_array)
+    public function setSku(array $skuId_num_paris_array)
     {
         $this->sku = json_encode($skuId_num_paris_array);
         return $this;

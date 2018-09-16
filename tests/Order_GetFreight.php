@@ -17,7 +17,7 @@ $application = new \Zeevin\Libjdvop\Application($config);
 $request = new \Zeevin\Libjdvop\Order\RequestAttribute\GetFreight\Request();
 
 
-$request->setSku(['skuId'=>774304,"num"=>1])->setProvince(13)->setCity(1000)->setCounty(40491)->setTown(0);
+$request->setSku([['skuId'=>774304,"num"=>1]])->setProvince(13)->setCity(1000)->setCounty(40491)->setTown(0);
 $reqData = $request->serialize();
 //print_r($reqData);exit;
 /** @var \Zeevin\Libjdvop\Order\GetFreightClient $app */
