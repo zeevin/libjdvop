@@ -134,6 +134,12 @@ Abstract class BaseClient
         } elseif ($format == 'array') {
             $this->result = json_decode($body, true);
         } elseif ($format == 'object') {
+            if ($this->getDomain() == 'oauth2')
+            {
+                $object = 'Zeevin\Libjdvop\\OAuth2'
+                    .'\ResponseAttribute\\'.ucfirst($this->getPrefix());
+            }else
+
             $object = 'Zeevin\Libjdvop\\'.ucfirst($this->getDomain())
                 .'\ResponseAttribute\\'.ucfirst($this->getPrefix());
             if ($this->getId()) {
