@@ -125,7 +125,7 @@ class Result
     {
         $lists = ['n0','n1','n2','n3','n4'];
         if (in_array($pixel_size_no,$lists))
-            return 'http://img13.360buyimg.com/'.$pixel_size_no.'/'.$this->imagePath;
+            return 'https://img13.360buyimg.com/'.$pixel_size_no.'/'.$this->imagePath;
     }
 
     /**
