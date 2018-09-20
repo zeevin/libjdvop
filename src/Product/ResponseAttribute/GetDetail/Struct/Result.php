@@ -100,6 +100,20 @@ class Result
      */
     protected $wareQD;
 
+	/**
+	 * @JMS\XmlElement(cdata=false)
+	 * @SerializedName("shouhou")
+	 * @JMS\Type("string")
+	 */
+    protected $shouhou;
+
+	/**
+	 * @JMS\XmlElement(cdata=false)
+	 * @SerializedName("appintroduce")
+	 * @JMS\Type("string")
+	 */
+	protected $appintroduce;
+
     /**
      * @return mixed
      */
@@ -214,5 +228,13 @@ class Result
     public function getWareQD()
     {
         return $this->wareQD;
+    }
+
+    public function getShouhou(){
+    	return $this->shouhou;
+    }
+
+    public function getAppintroduce(){
+    	return $this->appintroduce;
     }
 }
