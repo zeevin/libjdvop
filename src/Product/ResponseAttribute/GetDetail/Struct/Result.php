@@ -100,6 +100,20 @@ class Result
      */
     protected $wareQD;
 
+	/**
+	 * @JMS\XmlElement(cdata=false)
+	 * @SerializedName("shouhou")
+	 * @JMS\Type("string")
+	 */
+    protected $shouhou;
+
+	/**
+	 * @JMS\XmlElement(cdata=false)
+	 * @SerializedName("appintroduce")
+	 * @JMS\Type("string")
+	 */
+	protected $appintroduce;
+
     /**
      * @return mixed
      */
@@ -125,7 +139,7 @@ class Result
     {
         $lists = ['n0','n1','n2','n3','n4'];
         if (in_array($pixel_size_no,$lists))
-            return 'http://img13.360buyimg.com/'.$pixel_size_no.'/'.$this->imagePath;
+            return 'https://img13.360buyimg.com/'.$pixel_size_no.'/'.$this->imagePath;
     }
 
     /**
@@ -214,5 +228,13 @@ class Result
     public function getWareQD()
     {
         return $this->wareQD;
+    }
+
+    public function getShouhou(){
+    	return $this->shouhou;
+    }
+
+    public function getAppintroduce(){
+    	return $this->appintroduce;
     }
 }
