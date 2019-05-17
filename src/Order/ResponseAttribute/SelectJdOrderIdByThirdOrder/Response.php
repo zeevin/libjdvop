@@ -25,7 +25,7 @@ class Response extends BaseResponseAttribute
      * @SerializedName("result")
      * @JMS\Type("string")
      */
-    protected $result;
+    public $result;
 
     /**
      * @return string

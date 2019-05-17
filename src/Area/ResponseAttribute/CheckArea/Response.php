@@ -19,7 +19,7 @@ class Response extends BaseResponseAttribute
 	 * @SerializedName("result")
 	 * @JMS\Type("Zeevin\Libjdvop\Area\ResponseAttribute\CheckArea\Struct\Result")
 	 */
-	protected $result;
+	public $result;
 
 	/**
 	 * @return Result

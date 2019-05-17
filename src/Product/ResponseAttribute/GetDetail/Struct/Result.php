@@ -20,99 +20,99 @@ class Result
      * @SerializedName("sku")
      * @JMS\Type("string")
      */
-    protected $sku;
+    public $sku;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("weight")
      * @JMS\Type("float")
      */
-    protected $weight;
+    public $weight;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("imagePath")
      * @JMS\Type("string")
      */
-    protected $imagePath;
+    public $imagePath;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("state")
      * @JMS\Type("string")
      */
-    protected $state;
+    public $state;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("brandName")
      * @JMS\Type("string")
      */
-    protected $brandName;
+    public $brandName;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("name")
      * @JMS\Type("string")
      */
-    protected $name;
+    public $name;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("productArea")
      * @JMS\Type("string")
      */
-    protected $productArea;
+    public $productArea;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("upc")
      * @JMS\Type("string")
      */
-    protected $upc;
+    public $upc;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("saleUnit")
      * @JMS\Type("string")
      */
-    protected $saleUnit;
+    public $saleUnit;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("category")
      * @JMS\Type("string")
      */
-    protected $category;
+    public $category;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("eleGift")
      * @JMS\Type("string")
      */
-    protected $eleGift;
+    public $eleGift;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("introduction")
      * @JMS\Type("string")
      */
-    protected $introduction;
+    public $introduction;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("param")
      * @JMS\Type("string")
      */
-    protected $param;
+    public $param;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("wareQD")
      * @JMS\Type("string")
      */
-    protected $wareQD;
+    public $wareQD;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("shouhou")
 	 * @JMS\Type("string")
 	 */
-    protected $shouhou;
+    public $shouhou;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("appintroduce")
 	 * @JMS\Type("string")
 	 */
-	protected $appintroduce;
+	public $appintroduce;
 
     /**
      * @return mixed

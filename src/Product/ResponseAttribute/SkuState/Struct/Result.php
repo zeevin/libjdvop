@@ -21,13 +21,13 @@ class Result
      * @SerializedName("state")
      * @JMS\Type("string")
      */
-    protected $state;
+    public $state;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("sku")
      * @JMS\Type("string")
      */
-    protected $sku;
+    public $sku;
 
     /**
      * @return mixed

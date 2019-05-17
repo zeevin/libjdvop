@@ -20,13 +20,13 @@ class Page
      * @SerializedName("name")
      * @JMS\Type("string")
      */
-    protected $name;
+    public $name;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("page_num")
      * @JMS\Type("string")
      */
-    protected $page_num;
+    public $page_num;
 
     /**
      * @return mixed

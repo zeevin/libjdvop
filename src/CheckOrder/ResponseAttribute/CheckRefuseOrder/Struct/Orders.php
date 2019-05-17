@@ -18,21 +18,21 @@ class Orders
 	 * @SerializedName("jdOrderId")
 	 * @JMS\Type("string")
 	 */
-	protected $jdOrderId;
+	public $jdOrderId;
 	/**
 	 * 订单状态 0 是新建 1 是妥投 2 是拒收
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("state")
 	 * @JMS\Type("int")
 	 */
-	protected $state;
+	public $state;
 	/**
 	 * 是否挂起 0 为为挂起 1 为挂起
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("hangUpState")
 	 * @JMS\Type("int")
 	 */
-	protected $hangUpState;
+	public $hangUpState;
 
 	/**
 	 * 开票方式(1 为随货开票， 0 为订单预借， 2 为集中开票 )
@@ -40,7 +40,7 @@ class Orders
 	 * @SerializedName("invoiceState")
 	 * @JMS\Type("int")
 	 */
-	protected $invoiceState;
+	public $invoiceState;
 
 	/**
 	 * 订单金额
@@ -48,7 +48,7 @@ class Orders
 	 * @SerializedName("orderPrice")
 	 * @JMS\Type("string")
 	 */
-	protected $orderPrice;
+	public $orderPrice;
 
 	/**
 	 * 订单时间
@@ -56,7 +56,7 @@ class Orders
 	 * @SerializedName("time")
 	 * @JMS\Type("string")
 	 */
-	protected $time;
+	public $time;
 
 	/**
 	 * @return mixed

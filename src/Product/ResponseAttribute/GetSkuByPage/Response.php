@@ -22,7 +22,7 @@ class Response extends BaseResponseAttribute
      * @SerializedName("result")
      * @JMS\Type("Zeevin\Libjdvop\Product\ResponseAttribute\GetSkuByPage\Struct\Result")
      */
-    protected $result;
+    public $result;
 
     /**
      * @return Result

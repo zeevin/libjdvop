@@ -376,11 +376,11 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param array ...$sku
+     * @param array $sku
      *
      * @return $this
      */
-    public function setSku(array ... $sku)
+    public function setSku(array $sku)
     {
         $this->sku = json_encode($sku);
         return $this;
@@ -889,11 +889,11 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param array ...$orderPriceSnap
+     * @param array $orderPriceSnap
      *
      * @return $this
      */
-    public function setOrderPriceSnap(array ... $orderPriceSnap)
+    public function setOrderPriceSnap(array $orderPriceSnap)
     {
         $this->orderPriceSnap = json_encode($orderPriceSnap);
         return $this;
