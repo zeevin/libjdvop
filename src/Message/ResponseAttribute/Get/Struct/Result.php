@@ -19,7 +19,7 @@ class Result
 	 * @SerializedName("id")
 	 * @JMS\Type("string")
 	 */
-	protected $id;
+	public $id;
 
 	/**
 	 * 消息类型
@@ -27,7 +27,7 @@ class Result
 	 * @SerializedName("type")
 	 * @JMS\Type("int")
 	 */
-	protected $type;
+	public $type;
 
 	/**
 	 * 时间
@@ -35,7 +35,7 @@ class Result
 	 * @SerializedName("time")
 	 * @JMS\Type("string")
 	 */
-	protected $time;
+	public $time;
 
 	/**
 	 * 消息
@@ -43,7 +43,7 @@ class Result
 	 * @SerializedName("result")
 	 * @JMS\Type("array<string,string>")
 	 */
-	protected $result;
+	public $result;
 
 	public function getId(){
 		return $this->id;

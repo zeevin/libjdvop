@@ -20,13 +20,13 @@ class Result
      * @SerializedName("pageCount")
      * @JMS\Type("string")
      */
-    protected $pageCount;
+    public $pageCount;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("skuIds")
      * @JMS\Type("array<string>")
      */
-    protected $skuIds;
+    public $skuIds;
 
     /**
      * @return mixed

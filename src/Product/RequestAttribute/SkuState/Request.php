@@ -34,11 +34,11 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param mixed ...$sku
+     * @param mixed $sku
      *
      * @return $this
      */
-    public function setSku(... $sku)
+    public function setSku(array $sku)
     {
         $this->sku = implode(',',$sku);
         return $this;

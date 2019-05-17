@@ -22,43 +22,43 @@ class Result
      * @SerializedName("skuId")
      * @JMS\Type("integer")
      */
-    protected $skuId;
+    public $skuId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("jdPrice")
      * @JMS\Type("float")
      */
-    protected $jdPrice;
+    public $jdPrice;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("price")
      * @JMS\Type("float")
      */
-    protected $price;
+    public $price;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("tax")
      * @JMS\Type("float")
      */
-    protected $tax;
+    public $tax;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("taxPrice")
      * @JMS\Type("float")
      */
-    protected $taxPrice;
+    public $taxPrice;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("nakedPrice")
      * @JMS\Type("float")
      */
-    protected $nakedPrice;
+    public $nakedPrice;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("marketPrice")
      * @JMS\Type("float")
      */
-    protected $marketPrice;
+    public $marketPrice;
 
     /**
      * @return mixed

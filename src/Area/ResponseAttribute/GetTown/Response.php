@@ -18,7 +18,7 @@ class Response extends BaseResponseAttribute
 	 * @SerializedName("result")
 	 * @JMS\Type("array<string, int>") 镇级别信息
 	 */
-	protected $result;
+    public $result;
 
 	/**
 	 * @return mixed

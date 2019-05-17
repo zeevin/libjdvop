@@ -22,7 +22,7 @@ class Response extends BaseResponseAttribute
      * @SerializedName("result")
      * @JMS\Type("array<Zeevin\Libjdvop\Price\ResponseAttribute\GetSellPrice\Struct\Result>")
      */
-    protected $result;
+    public $result;
 
     /**
      * @return Result

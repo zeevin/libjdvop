@@ -23,7 +23,7 @@ class OrderSkuVO
      * @SerializedName("skuId")
      * @JMS\Type("string")
      */
-    protected $skuId;
+    public $skuId;
     /**
      * 商品名称
      * @var string
@@ -31,7 +31,7 @@ class OrderSkuVO
      * @SerializedName("name")
      * @JMS\Type("string")
      */
-    protected $name;
+    public $name;
     /**
      * 商品数据
      * @var integer
@@ -39,7 +39,7 @@ class OrderSkuVO
      * @SerializedName("num")
      * @JMS\Type("integer")
      */
-    protected $num;
+    public $num;
     /**
      * 商品类型 0普通、1附件、2赠品
      * @var integer
@@ -47,7 +47,7 @@ class OrderSkuVO
      * @SerializedName("type")
      * @JMS\Type("integer")
      */
-    protected $type;
+    public $type;
     /**
      * 商品类目
      * @var integer
@@ -55,7 +55,7 @@ class OrderSkuVO
      * @SerializedName("category")
      * @JMS\Type("integer")
      */
-    protected $category;
+    public $category;
     /**
      * 商品价格
      * @var float
@@ -63,7 +63,7 @@ class OrderSkuVO
      * @SerializedName("price")
      * @JMS\Type("float")
      */
-    protected $price;
+    public $price;
     /**
      * 商品裸价
      * @var float
@@ -71,7 +71,7 @@ class OrderSkuVO
      * @SerializedName("nakedPrice")
      * @JMS\Type("float")
      */
-    protected $nakedPrice;
+    public $nakedPrice;
     /**
      * 商品税费
      * @var float
@@ -79,7 +79,7 @@ class OrderSkuVO
      * @SerializedName("taxPrice")
      * @JMS\Type("integer")
      */
-    protected $taxPrice;
+    public $taxPrice;
     /**
      * oid为主商品skuid，如果本身是主商品，则oid为0
      * @var integer
@@ -87,7 +87,7 @@ class OrderSkuVO
      * @SerializedName("oid")
      * @JMS\Type("integer")
      */
-    protected $oid;
+    public $oid;
     /**
      * 商品税率
      * @var integer
@@ -95,7 +95,7 @@ class OrderSkuVO
      * @SerializedName("tax")
      * @JMS\Type("integer")
      */
-    protected $tax;
+    public $tax;
 
     /**
      * @return string

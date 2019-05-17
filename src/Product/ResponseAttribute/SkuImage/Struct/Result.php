@@ -22,77 +22,77 @@ class Result
      * @SerializedName("id")
      * @JMS\Type("integer")
      */
-    protected $id;
+    public $id;
     /**
      * 商品编码
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("skuId")
      * @JMS\Type("string")
      */
-    protected $skuId;
+    public $skuId;
     /**
      * 地址
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("path")
      * @JMS\Type("string")
      */
-    protected $path;
+    public $path;
     /**
      * 创建日期
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("created")
      * @JMS\Type("DateTime<'Y-m-d H:i:s'>")
      */
-    protected $created;
+    public $created;
     /**
      * 修改日期
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("modified")
      * @JMS\Type("DateTime<'Y-m-d H:i:s'>")
      */
-    protected $modified;
+    public $modified;
     /**
      * 是否启用
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("yn")
      * @JMS\Type("integer")
      */
-    protected $yn;
+    public $yn;
     /**
      * 1主图2附图
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("isPrimary")
      * @JMS\Type("integer")
      */
-    protected $isPrimary;
+    public $isPrimary;
     /**
      * 排序
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("orderSort")
      * @JMS\Type("integer")
      */
-    protected $orderSort;
+    public $orderSort;
     /**
      * 位置
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("position")
      * @JMS\Type("integer")
      */
-    protected $position;
+    public $position;
     /**
      * 类别：0方图1长图（服装）
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("type")
      * @JMS\Type("integer")
      */
-    protected $type;
+    public $type;
     /**
      * 特征
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("feature")
      * @JMS\Type("integer")
      */
-    protected $feature;
+    public $feature;
 
     /**
      * @return mixed

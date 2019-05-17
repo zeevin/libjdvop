@@ -24,7 +24,7 @@ class Response extends BaseResponseAttribute
      * @SerializedName("result")
      * @JMS\Type("boolean")
      */
-    protected $result;
+    public $result;
 
     /**
      * @return bool

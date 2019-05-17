@@ -21,91 +21,91 @@ class HitResult
      * @SerializedName("wareId")
      * @JMS\Type("string")
      */
-    protected $wareId;
+    public $wareId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("warePId")
      * @JMS\Type("string")
      */
-    protected $warePId;
+    public $warePId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("brandId")
      * @JMS\Type("string")
      */
-    protected $brandId;
+    public $brandId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("brand")
      * @JMS\Type("string")
      */
-    protected $brand;
+    public $brand;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("wareName")
      * @JMS\Type("string")
      */
-    protected $wareName;
+    public $wareName;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("catName")
      * @JMS\Type("string")
      */
-    protected $catName;
+    public $catName;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("imageUrl")
      * @JMS\Type("string")
      */
-    protected $imageUrl;
+    public $imageUrl;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("catId")
      * @JMS\Type("string")
      */
-    protected $catId;
+    public $catId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("cid1")
      * @JMS\Type("string")
      */
-    protected $cid1;
+    public $cid1;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("cid2")
      * @JMS\Type("string")
      */
-    protected $cid2;
+    public $cid2;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("cid1Name")
      * @JMS\Type("string")
      */
-    protected $cid1Name;
+    public $cid1Name;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("cid2Name")
      * @JMS\Type("string")
      */
-    protected $cid2Name;
+    public $cid2Name;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("wstate")
      * @JMS\Type("string")
      */
-    protected $wstate;
+    public $wstate;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("wyn")
      * @JMS\Type("string")
      */
-    protected $wyn;
+    public $wyn;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("synonyms")
      * @JMS\Type("string")
      */
-    protected $synonyms;
+    public $synonyms;
 
     /**
      * @return mixed

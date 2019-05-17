@@ -23,7 +23,7 @@ class Response extends BaseResponseAttribute
      * @SerializedName("result")
      * @JMS\Type("array<Zeevin\Libjdvop\Product\ResponseAttribute\GetPageNum\Struct\Page>")
      */
-    protected $result;
+    public $result;
 
     /**
      * @return Page

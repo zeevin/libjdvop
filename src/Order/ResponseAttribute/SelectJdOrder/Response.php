@@ -24,7 +24,7 @@ class Response extends BaseResponseAttribute
      * @SerializedName("result")
      * @JMS\Type("Zeevin\Libjdvop\Order\ResponseAttribute\SelectJdOrder\Struct\Result")
      */
-   protected $result;
+    public $result;
 
     /**
      * @return Result

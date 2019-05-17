@@ -20,31 +20,31 @@ class CategoryNo
      * @SerializedName("catId")
      * @JMS\Type("integer")
      */
-    protected $catId;
+    public $catId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("parentId")
      * @JMS\Type("integer")
      */
-    protected $parentId;
+    public $parentId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("name")
      * @JMS\Type("string")
      */
-    protected $name;
+    public $name;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("catClass")
      * @JMS\Type("integer")
      */
-    protected $catClass;
+    public $catClass;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("state")
      * @JMS\Type("integer")
      */
-    protected $state;
+    public $state;
 
     /**
      * @return mixed

@@ -22,7 +22,7 @@ class ParentOrderRepVO
      * @SerializedName("jdOrderId")
      * @JMS\Type("string")
      */
-    protected $jdOrderId;
+    public $jdOrderId;
     /**
      * 订单税费
      * @var float
@@ -30,7 +30,7 @@ class ParentOrderRepVO
      * @SerializedName("orderTaxPrice")
      * @JMS\Type("float")
      */
-    protected $orderTaxPrice;
+    public $orderTaxPrice;
     /**
      * 订单裸价
      * @var float
@@ -38,7 +38,7 @@ class ParentOrderRepVO
      * @SerializedName("orderNakedPrice")
      * @JMS\Type("float")
      */
-    protected $orderNakedPrice;
+    public $orderNakedPrice;
     /**
      * 订单价格
      * @var float
@@ -46,14 +46,14 @@ class ParentOrderRepVO
      * @SerializedName("orderPrice")
      * @JMS\Type("float")
      */
-    protected $orderPrice;
+    public $orderPrice;
     /**
      * 商品列表
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("sku")
      * @JMS\Type("array<Zeevin\Libjdvop\Order\ResponseAttribute\SelectJdOrder\Struct\OrderSkuVO>")
      */
-    protected $sku;
+    public $sku;
     /**
      * 运费
      * @var float
@@ -61,7 +61,7 @@ class ParentOrderRepVO
      * @SerializedName("freight")
      * @JMS\Type("float")
      */
-    protected $freight;
+    public $freight;
 
     /**
      * @return string

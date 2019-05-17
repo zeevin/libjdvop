@@ -17,14 +17,14 @@ class Result
 	 * @SerializedName("provinceId")
 	 * @JMS\Type("int")
 	 */
-	protected $provinceId;
+    public $provinceId;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("county")
 	 * @JMS\Type("string")
 	 */
-	protected $county;
+    public $county;
 
 
 	/**
@@ -32,53 +32,53 @@ class Result
 	 * @SerializedName("cityId")
 	 * @JMS\Type("int")
 	 */
-	protected $cityId;
+    public $cityId;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("province")
 	 * @JMS\Type("string")
 	 */
-	protected $province;
+    public $province;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("townId")
 	 * @JMS\Type("int")
 	 */
-	protected $townId;
+    public $townId;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("town")
 	 * @JMS\Type("string")
 	 */
-	protected $town;
+    public $town;
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("countyId")
 	 * @JMS\Type("int")
 	 */
-	protected $countyId;
+    public $countyId;
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("nation")
 	 * @JMS\Type("string")
 	 */
-	protected $nation;
+    public $nation;
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("city")
 	 * @JMS\Type("string")
 	 */
-	protected $city;
+    public $city;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("nationId")
 	 * @JMS\Type("int")
 	 */
-	protected $nationId;
+    public $nationId;
 
 
 	public function getProvinceId(){
