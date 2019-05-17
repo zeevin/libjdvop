@@ -41,11 +41,11 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param array ...$skuId_num_pair_array
+     * @param array $skuId_num_pair_array
      *
      * @return $this
      */
-    public function setSkuNums(array ... $skuId_num_pair_array)
+    public function setSkuNums(array $skuId_num_pair_array)
     {
         $this->skuNums = json_encode($skuId_num_pair_array);
         return $this;

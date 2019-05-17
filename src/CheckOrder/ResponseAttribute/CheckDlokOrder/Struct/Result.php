@@ -21,28 +21,28 @@ class Result
      * @SerializedName("total")
      * @JMS\Type("int")
      */
-    protected $total;
+    public $total;
     /**
      * 总页码数
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("curPage")
      * @JMS\Type("int")
      */
-    protected $totalPage;
+    public $totalPage;
 	/**
 	 * 当前页码
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("curPage")
 	 * @JMS\Type("int")
 	 */
-    protected $curPage;
+    public $curPage;
     /**
      * 订单信息
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("orders")
      * @JMS\Type("array<Zeevin\Libjdvop\CheckOrder\ResponseAttribute\CheckDlokOrder\Struct\Orders>")
      */
-    protected $orders;
+    public $orders;
 
     /**
      * @return mixed

@@ -17,28 +17,28 @@ class Result
 	 * @SerializedName("success")
 	 * @JMS\Type("bool") 是否正确
 	 */
-	protected $success;
+	public $success;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("resultCode")
 	 * @JMS\Type("int") 结果码
 	 */
-	protected $resultCode;
+	public $resultCode;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("addressId")
 	 * @JMS\Type("int") 地址id
 	 */
-	protected $addressId;
+	public $addressId;
 
 	/**
 	 * @JMS\XmlElement(cdata=false)
 	 * @SerializedName("message")
 	 * @JMS\Type("string") 错误信息
 	 */
-	protected $message;
+	public $message;
 
 	public function getResultCode(){
 		return $this->resultCode;

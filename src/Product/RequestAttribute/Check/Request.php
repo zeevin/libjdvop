@@ -34,11 +34,11 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param mixed ...$skuIds
+     * @param mixed $skuIds
      *
      * @return $this
      */
-    public function setSkuIds(... $skuIds)
+    public function setSkuIds(array $skuIds)
     {
         $this->skuIds = implode(',',$skuIds);
         return $this;

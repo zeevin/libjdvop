@@ -22,21 +22,21 @@ class BrandList
      * @SerializedName("id")
      * @JMS\Type("string")
      */
-    protected $id;
+    public $id;
     /**
      * 品牌名称
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("name")
      * @JMS\Type("string")
      */
-    protected $name;
+    public $name;
     /**
      * 品牌首字母拼音
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("pinyin")
      * @JMS\Type("string")
      */
-    protected $pinyin;
+    public $pinyin;
 
     /**
      * @return mixed

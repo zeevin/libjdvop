@@ -22,60 +22,60 @@ class Result
      * @SerializedName("resultCount")
      * @JMS\Type("integer")
      */
-    protected $resultCount;
+    public $resultCount;
     /**
      * 当前第几页
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("pageIndex")
      * @JMS\Type("integer")
      */
-    protected $pageIndex;
+    public $pageIndex;
     /**
      * 每页大小
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("pageSize")
      * @JMS\Type("integer")
      */
-    protected $pageSize;
+    public $pageSize;
     /**
      * 总页数
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("pageCount")
      * @JMS\Type("integer")
      */
-    protected $pageCount;
+    public $pageCount;
     /**
      * 品牌汇总信息
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("brandAggregate")
      * @JMS\Type("Zeevin\Libjdvop\Search\ResponseAttribute\Search\Struct\BrandAggregate")
      */
-    protected $brandAggregate;
+    public $brandAggregate;
     /**
      * 相关分类汇总信息
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("categoryAggregate")
      * @JMS\Type("array<string,array>")
      */
-    protected $categoryAggregate;
+    public $categoryAggregate;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("priceIntervalAggregate")
      * @JMS\Type("array")
      */
-    protected $priceIntervalAggregate;
+    public $priceIntervalAggregate;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("expandAttrAggregate")
      * @JMS\Type("string")
      */
-    protected $expandAttrAggregate;
+    public $expandAttrAggregate;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("hitResult")
      * @JMS\Type("array<Zeevin\Libjdvop\Search\ResponseAttribute\Search\Struct\HitResult>")
      */
-    protected $hitResult;
+    public $hitResult;
 
     /**
      * @return mixed

@@ -190,9 +190,10 @@ class Request extends BaseRequestAttribute
     }
 
     /**
-     * @param mixed $brands
+     * @param array $brands
+     * @return mixed
      */
-    public function setBrands(... $brands)
+    public function setBrands(array $brands)
     {
 
         $this->brands = implode(',',$brands);

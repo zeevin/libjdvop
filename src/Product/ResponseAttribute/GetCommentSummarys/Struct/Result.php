@@ -20,32 +20,32 @@ class Result
      * @SerializedName("averageScore")
      * @JMS\Type("float")
      */
-    protected $averageScore;
+    public $averageScore;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("generalRate")
      * @JMS\Type("float")
      */
-    protected $generalRate;
+    public $generalRate;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("goodRate")
      * @JMS\Type("float")
      */
-    protected $goodRate;
+    public $goodRate;
     /**
      * 商品编码
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("skuId")
      * @JMS\Type("string")
      */
-    protected $skuId;
+    public $skuId;
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("poorRate")
      * @JMS\Type("float")
      */
-    protected $poorRate;
+    public $poorRate;
 
     /**
      * @return mixed

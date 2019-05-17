@@ -23,7 +23,7 @@ class ChildrenOrderRepVO
      * @SerializedName("jdOrderId")
      * @JMS\Type("string")
      */
-    protected $jdOrderId;
+    public $jdOrderId;
     /**
      * 物流状态 0新建 1投妥 2拒收
      * @var integer
@@ -31,7 +31,7 @@ class ChildrenOrderRepVO
      * @SerializedName("state")
      * @JMS\Type("integer")
      */
-    protected $state;
+    public $state;
     /**
      * 订单类型 1是父订单 2是子订单
      * @var integer
@@ -39,7 +39,7 @@ class ChildrenOrderRepVO
      * @SerializedName("type")
      * @JMS\Type("integer")
      */
-    protected $type;
+    public $type;
     /**
      * 订单税费
      * @var float
@@ -47,7 +47,7 @@ class ChildrenOrderRepVO
      * @SerializedName("orderTaxPrice")
      * @JMS\Type("float")
      */
-    protected $orderTaxPrice;
+    public $orderTaxPrice;
     /**
      * 订单裸价
      * @var float
@@ -55,7 +55,7 @@ class ChildrenOrderRepVO
      * @SerializedName("orderNakedPrice")
      * @JMS\Type("float")
      */
-    protected $orderNakedPrice;
+    public $orderNakedPrice;
     /**
      * 订单价格
      * @var float
@@ -63,14 +63,14 @@ class ChildrenOrderRepVO
      * @SerializedName("orderPrice")
      * @JMS\Type("float")
      */
-    protected $orderPrice;
+    public $orderPrice;
     /**
      * 商品列表
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("sku")
      * @JMS\Type("array<Zeevin\Libjdvop\Order\ResponseAttribute\SelectJdOrder\Struct\OrderSkuVO>")
      */
-    protected $sku;
+    public $sku;
     /**
      * 父订单号
      * @var string
@@ -78,7 +78,7 @@ class ChildrenOrderRepVO
      * @SerializedName("pOrder")
      * @JMS\Type("string")
      */
-    protected $pOrder;
+    public $pOrder;
     /**
      * 订单状态 0 为取消订单 1 为有效
      * @var integer
@@ -86,7 +86,7 @@ class ChildrenOrderRepVO
      * @SerializedName("orderState")
      * @JMS\Type("integer")
      */
-    protected $orderState;
+    public $orderState;
     /**
      * 0 为未确认下单订单 1 为确认下单订单
      * @var integer
@@ -94,7 +94,7 @@ class ChildrenOrderRepVO
      * @SerializedName("submitState")
      * @JMS\Type("integer")
      */
-    protected $submitState;
+    public $submitState;
     /**
      * 运费(合同有运费配置才会返回，否则不会返回该字段)
      * @var float
@@ -102,7 +102,7 @@ class ChildrenOrderRepVO
      * @SerializedName("freight")
      * @JMS\Type("float")
      */
-    protected $freight;
+    public $freight;
     /**
      * 订单类别，查询参数中包含 queryExts=orderType 1.普通商品
      * 2.大家电
@@ -120,7 +120,7 @@ class ChildrenOrderRepVO
      * @SerializedName("orderType")
      * @JMS\Type("integer")
      */
-    protected $orderType;
+    public $orderType;
     /**
      * 京东状态，查询参数中包含 queryExts=jdOrderState
      * 1.新单
@@ -153,7 +153,7 @@ class ChildrenOrderRepVO
      * @SerializedName("jdOrderState")
      * @JMS\Type("integer")
      */
-    protected $jdOrderState;
+    public $jdOrderState;
     /**
      * 收货地址，查询参数中包含 queryExts=address
      * 解密方式:AD+client_id 前 6 位
@@ -164,7 +164,7 @@ class ChildrenOrderRepVO
      * @SerializedName("address")
      * @JMS\Type("string")
      */
-    protected $address;
+    public $address;
     /**
      * 姓名，查询参数中包含 queryExts=name
      * 解密方式:NA+client_id 前 6 位，
@@ -175,7 +175,7 @@ class ChildrenOrderRepVO
      * @SerializedName("name")
      * @JMS\Type("string")
      */
-    protected $name;
+    public $name;
     /**
      * 联系方式，查询参数中包含 queryExts=mobile
      * 解密方式:MO+client_id 前 6 位
@@ -186,7 +186,7 @@ class ChildrenOrderRepVO
      * @SerializedName("mobile")
      * @JMS\Type("string")
      */
-    protected $mobile;
+    public $mobile;
     /**
      * 采购单号，查询参数中包含 queryExts=poNo
      * @var string
@@ -194,7 +194,7 @@ class ChildrenOrderRepVO
      * @SerializedName("poNo")
      * @JMS\Type("string")
      */
-    protected $poNo;
+    public $poNo;
 
     /**
      * @return string

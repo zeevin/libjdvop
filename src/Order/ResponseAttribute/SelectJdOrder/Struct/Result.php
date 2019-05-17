@@ -21,14 +21,14 @@ class Result
      * @SerializedName("pOrder")
      * @JMS\Type("array<Zeevin\Libjdvop\Order\ResponseAttribute\SelectJdOrder\Struct\ParentOrderRepVO>")
      */
-    protected $pOrder;
+    public $pOrder;
     /**
      * 京东子单
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("cOrder")
      * @JMS\Type("array<Zeevin\Libjdvop\Order\ResponseAttribute\SelectJdOrder\Struct\ChildrenOrderRepVO>")
      */
-    protected $cOrder;
+    public $cOrder;
     /**
      * 订单类型
      * 1 是父订单 2 是子订单
@@ -37,7 +37,7 @@ class Result
      * @SerializedName("type")
      * @JMS\Type("integer")
      */
-    protected $type;
+    public $type;
     /**
      * 订单状态
      * 0 为未确认下单订单 1 为确认下单订单
@@ -46,7 +46,7 @@ class Result
      * @SerializedName("submitState")
      * @JMS\Type("integer")
      */
-    protected $submitState;
+    public $submitState;
     /**
      * 订单状态
      * 0 为取消订单 1 为有效
@@ -55,7 +55,7 @@ class Result
      * @SerializedName("orderState")
      * @JMS\Type("integer")
      */
-    protected $orderState;
+    public $orderState;
 
     /**
      * @return mixed

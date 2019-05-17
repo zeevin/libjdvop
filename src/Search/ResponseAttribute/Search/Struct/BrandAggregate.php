@@ -21,14 +21,14 @@ class BrandAggregate
      * @SerializedName("brandList")
      * @JMS\Type("array<Zeevin\Libjdvop\Search\ResponseAttribute\Search\Struct\BrandList>")
      */
-    protected $brandList;
+    public $brandList;
     /**
      * 品牌列表
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("pinyinAggr")
      * @JMS\Type("array<string>")
      */
-    protected $pinyinAggr;
+    public $pinyinAggr;
 
     /**
      * @return mixed
